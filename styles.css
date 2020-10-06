@@ -9,24 +9,31 @@ body {
     text-align: center;
     font-family: "Sofia";
     font-size: 100px;
+    text-shadow: 3px 3px #ffffff;
 }
 
 .mediumHeading {
-    color: darkslategrey;
+    color: rgb(16, 34, 19);
     text-align: center;
     font-family: "Sansita";
     font-size: 40px;
+    text-shadow: 1px 1px #ffffff;
 }
 
 .shortText {
-    color: darkslategrey;
+    color: rgb(16, 34, 19);
     text-align: center;
     font-family: "Sansita";
     font-size: 20px;    
 }
 
+ul {
+    text-align: center;
+    list-style: inside;
+}
+
 a:link {
-    color: darkslategrey
+    color: rgb(16, 34, 19)
 }
 
 a:visited {
@@ -39,7 +46,7 @@ a:hover {
 
 
 button {
-    background-color: darkslategrey; /* Green */
+    background-color: rgb(16, 34, 19); /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
