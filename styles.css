@@ -1,0 +1,53 @@
+body {
+    /*background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+    background-image: url("backgroundgreen.jpg");
+    background-size: cover;
+}
+
+.largeHeading {
+    color: darkolivegreen;
+    text-align: center;
+    font-family: "Sofia";
+    font-size: 100px;
+}
+
+.mediumHeading {
+    color: darkslategrey;
+    text-align: center;
+    font-family: "Sansita";
+    font-size: 40px;
+}
+
+.shortText {
+    color: darkslategrey;
+    text-align: center;
+    font-family: "Sansita";
+    font-size: 20px;    
+}
+
+a:link {
+    color: darkslategrey
+}
+
+a:visited {
+    color: darkolivegreen
+}
+
+a:hover {
+    color: black
+}
+
+
+button {
+    background-color: darkslategrey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
