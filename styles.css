@@ -58,3 +58,31 @@ button {
     font-size: 16px;
     border-radius: 12px;
 }
+
+.picContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: top;
+    border: ;
+}
+
+img {
+    width: 30%;
+}
+
+.upperContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.leftContainer {
+   display: flex;
+   flex-direction: column;
+}
+
+.rightContainer{
+   display: flex;
+   flex-direction: column;
+}
