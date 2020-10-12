@@ -3,6 +3,7 @@
 body {
     background-image: url("backgroundgreen.jpg");
     background-size: cover;
+    margin: auto;
 }
 
 main {
@@ -42,6 +43,7 @@ main {
 .list {
     list-style: inside;
     list-style-type: circle;
+    padding: 5px;
 }
 
 /* Styling för den övre flexboxen som innehåller "Vindagårdens vänner" och "Besök oss på Instagram */
@@ -61,15 +63,18 @@ main {
  }
 
 a:link {
-    color: #3F250B
+    color: #3F250B;
+    text-decoration: none;
 }
 
 a:visited {
-    color: darkolivegreen
+    color: darkolivegreen;
+    text-decoration: none;
 }
 
 a:hover {
-    color: black
+    color: black;
+    text-decoration: none;
 }
 
 /* Styling för högra item (besök oss på Instagram), samma inställningar för länken */
