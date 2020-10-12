@@ -1,8 +1,18 @@
+/* Generella inställningar för styling. */
+
 body {
-    /*background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
     background-image: url("backgroundgreen.jpg");
     background-size: cover;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text-styling för classerna largeHeading, mediumHeading och shortText. */
 
 .largeHeading {
     color: darkolivegreen;
@@ -13,7 +23,7 @@ body {
 }
 
 .mediumHeading {
-    color: rgb(16, 34, 19);
+    color: rgb(63, 37, 11);
     text-align: center;
     font-family: "Sansita";
     font-size: 40px;
@@ -21,19 +31,37 @@ body {
 }
 
 .shortText {
-    color: rgb(16, 34, 19);
+    color: rgb(63, 37, 11);
     text-align: center;
     font-family: "Sansita";
     font-size: 20px;    
 }
 
-ul {
-    text-align: center;
+/* Styling för class list */
+
+.list {
     list-style: inside;
+    list-style-type: circle;
 }
 
+/* Styling för den övre flexboxen som innehåller "Vindagårdens vänner" och "Besök oss på Instagram */
+
+.upperContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* Styling för den vänstra item (vindagårdens vänner) och dess länk */
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+ }
+
 a:link {
-    color: rgb(16, 34, 19)
+    color: #3F250B
 }
 
 a:visited {
@@ -44,45 +72,49 @@ a:hover {
     color: black
 }
 
+/* Styling för högra item (besök oss på Instagram), samma inställningar för länken */
 
-button {
-    background-color: rgb(16, 34, 19); /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+ }
+
+ /* Styling för den undre containern där bilderna ligger. */
 
 .picContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 50px;
-    align-items: top;
-    border: ;
 }
+
+/* Storlek för bilderna (item) i picContainer. */
 
 img {
     width: 30%;
+    position: relative;
+    border: 5px solid darkolivegreen;
+    border-radius: 5%;
+    box-shadow: 8px 8px 5px #1d160f;
 }
 
-.upperContainer {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+/* Styling för knappen längst ner som kommer länka till portfolio. */
+
+.button {
+    background-color: rgb(63, 37, 11);
+    font-family: "Sansita";
+    border: none;
+    color: rgba(255, 255, 255, 0.781);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 12px;
 }
 
-.leftContainer {
-   display: flex;
-   flex-direction: column;
-}
 
-.rightContainer{
-   display: flex;
-   flex-direction: column;
-}
+
+
+
+

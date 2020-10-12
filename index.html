@@ -1,3 +1,6 @@
+<!-- Välkommen till min sida! I kommentarerna har jag lagt beskrivning på vad som är vad i koden 
+Här kommer först grundläggande inställningar för ett HTML5-dokument samt länkar till den styling jag använt -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,50 +11,71 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita">
 </head>
+
+<!-- I body nedan börjar själva innehållet på sidan -->
 <body>
-    <h1 class="largeHeading">Angelika & Vindagården</h1>
-    <h2 class="mediumHeading">Välkommen hit till livet på landet!</h2>
-    <div class="shortText">
-        <p>Kul att du hittat hit! Mitt namn är Angelika och jag bor på Vindagården på Bjärehalvön.
-            <br></br>
-            Här listar jag några av de grödor jag odlar på min gård.</p>
-    </div>
+    <main>
 
-    <div class="shortText">
-        <ul class="list">
-            <li>Grönkål, svartkål, brysselkål och salladskål</li>
-            <li>Sallad, pak choi och rädisor</li>
-            <li>Solrosor, perenner och ängsblommor</li>
-            <li>Jordgubbar, hallon, rabarber, vinbär, vindruvor och körsbär</li>
-        </ul>
-    </div>
-    
-    <div class="upperContainer">
-        <div class="leftContainer">
-            <h2 class="mediumHeading">Vindagårdens vänner</h2>
-            <div class="shortText">
-                <p>Vi på Vindagården får mycket hjälp av Farbror Grön. Här hittar du honom:</p>
-            <a class="link" href=https://farbrorgron.se/>Farbror Gröns trädgårdsland</a>
-            </div>
-        </div>
-    
-       
-        <div class="rightContainer">
-            <h2 class="mediumHeading">Besök oss på Instagram!</h2>
-            <div class="shortText">
-                <p>Vill du komma i kontakt med oss? Klicka på länken nedan för att komma till vår Instagram.</p>
-                <a class="link" href=https://www.instagram.com/vindagarden/?hl=sv>Vindagården Vejby</a>
-            </div>
+        <!-- Första stycket på sidan innehåller två olika headings och en mindre text som fått en egen div -->
+
+        <h1 class="largeHeading">Angelika på Vindagården</h1>
+        <h2 class="mediumHeading">Välkommen hit till livet på landet!</h2>
+        <div class="shortText">
+            <p>Kul att du hittat hit! Mitt namn är Angelika och jag bor på Vindagården på Bjärehalvön.
+                <br></br>
+                Här listar jag några av de grödor jag odlar på min gård.</p>
         </div>
 
+        <!-- Här nedan ligger den onumrerade listan över grödor -->
+
+        <div class="shortText">
+            <ul class="list">
+                <li>Grönkål, svartkål, brysselkål och salladskål</li>
+                <li>Sallad, pak choi och rädisor</li>
+                <li>Solrosor, perenner och ängsblommor</li>
+                <li>Jordgubbar, hallon, rabarber, vinbär, vindruvor och körsbär</li>
+            </ul>
+        </div>
+
+        <!-- Här nedan följer två olika flexboxar. Den övre, "upperContainer", innehåller sektionerna (item) "leftContainer" för
+            'Vindagårdens Vänner' och "rightContainer" för 'Besök oss på Instagram' -->
         
-    </div>
-    
+        <div class="upperContainer">
 
-    <div class=picContainer>
-        <img src="img/pump.PNG" alt="Innergården">
-        <img src="img/vera.PNG" alt="Geten Vera">
-        <img src="img/vaxthus.PNG" alt="Vårt växthus">
-    </div>
+            <!-- Vänstra item för 'Vindagårdens Vänner' -->
+            <div class="leftContainer">
+                <h2 class="mediumHeading">Vindagårdens vänner</h2>
+                <div class="shortText">
+                    <p>Vi på Vindagården får mycket hjälp av Farbror Grön. Här hittar du honom:</p>
+                <a class="link" href=https://farbrorgron.se/>Farbror Gröns trädgårdsland</a>
+                </div>
+            </div>
+            
+            <!-- Högra item för 'Besök oss på Instagram' -->
+            <div class="rightContainer">
+                <h2 class="mediumHeading">Besök oss på Instagram!</h2>
+                <div class="shortText">
+                    <p>Vill du komma i kontakt med oss? Klicka på länken nedan för att komma till vår Instagram.</p>
+                    <a class="link" href=https://www.instagram.com/vindagarden/?hl=sv>Vindagården Vejby</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Här börjar flexbox nummer två, den undre containern, där bilderna ligger -->
+
+        <div class=picContainer>
+            <img src="img/pump.PNG" alt="Innergården">
+            <img src="img/vera.PNG" alt="Geten Vera">
+            <img src="img/vaxthus.PNG" alt="Vårt växthus">
+        </div>
+        
+        <!-- Sist men inte minst kommer knappen som kommer länka till min portfolio längre fram -->
+        <div>
+            <button type="submit" class="button">
+            Klicka här för att se portfolio!
+            </button>
+        </div>    
+    </main>    
 </body>
+
 </html>
